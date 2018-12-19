@@ -1,1 +1,23 @@
 @charset "UTF-8";
+
+h1
+{
+	color:blue;
+}
+
+@font-face{
+	
+}
+body
+{
+	
+}
+.foo
+{
+	border: 2px black solid;
+	border-collapse:collapse;
+	text-align:center;
+}
+.current {
+	border: 2px solid red;
+}

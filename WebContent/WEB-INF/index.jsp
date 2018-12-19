@@ -14,53 +14,17 @@
 	</header>
 	<main>
 		<div class="container grille">
+			
 			<div class="row">
-      			<div class="col-2 ">1</div>
-     			<div class="col-2 ">2</div>
-      			<div class="col-2 ">3</div>
-      			<div class="col-2 ">4</div>
-      			<div class="col-2 ">5</div>
-      			<div class="col-2 ">6</div>
-			</div>
-			<div class="row">
-      			<div class="col-2 ">1</div>
-     			<div class="col-2 ">2</div>
-      			<div class="col-2 ">3</div>
-      			<div class="col-2 ">4</div>
-      			<div class="col-2 ">5</div>
-      			<div class="col-2 ">6</div>
-			</div>
-			<div class="row">
-      			<div class="col-2 ">1</div>
-     			<div class="col-2 ">2</div>
-      			<div class="col-2 ">3</div>
-      			<div class="col-2 ">4</div>
-      			<div class="col-2 ">5</div>
-      			<div class="col-2 ">6</div>
-			</div>
-			<div class="row">
-      			<div class="col-2 ">1</div>
-     			<div class="col-2 ">2</div>
-      			<div class="col-2 ">3</div>
-      			<div class="col-2 ">4</div>
-      			<div class="col-2 ">5</div>
-      			<div class="col-2 ">6</div>
-			</div>
-			<div class="row">
-      			<div class="col-2 ">1</div>
-     			<div class="col-2 ">2</div>
-      			<div class="col-2 ">3</div>
-      			<div class="col-2 ">4</div>
-      			<div class="col-2 ">5</div>
-      			<div class="col-2 ">6</div>
-			</div>
-			<div class="row">
-      			<div class="col-2 ">1</div>
-     			<div class="col-2 ">2</div>
-      			<div class="col-2 ">3</div>
-      			<div class="col-2 ">4</div>
-      			<div class="col-2 ">5</div>
-      			<div class="col-2 ">1</div>
+
+				<% int currentCase = 15; %>
+				<% for(int i = 1; i <= 31; i++) { %>
+					<% if(i == currentCase) { %>
+		      			<div class="current col-2 foo"><%= i %></div>
+					<% } else { %>
+		      			<div class="col-2 foo"><%= i %></div>
+					<% } %>
+				<% } %>
 			</div>
 		
 		</div>
