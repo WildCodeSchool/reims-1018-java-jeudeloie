@@ -37,7 +37,9 @@
 			<button type="submit">Lancer le dé</button>
 		</form>
 		<form action=""method="post" class="info">
+			<p><%if (currentCase==1 ||currentCase==2||currentCase==3||currentCase==4 ) {%>
 			<button type="submit">Clique pour voir ce qu'il se passe</button>
+			<% } %></p>
 			<p><% if (currentCase==7||currentCase==8||currentCase==9){ %>
 			<button type="submit">On est fermé</button><%} %>
 			</p>
