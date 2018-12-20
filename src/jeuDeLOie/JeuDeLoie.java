@@ -45,14 +45,18 @@ public class JeuDeLoie extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		int position = Integer.parseInt(request.getParameter("position"));
 		int diceRoll = Dice.roll();
-		
+		while (position<32) {
 		position += diceRoll;
 		
 		request.setAttribute("position", position);
 		request.setAttribute("diceRoll", diceRoll);
 		
 		doGet(request, response);
+		}
+			doGet(request,response);
+		
 	}
 }
