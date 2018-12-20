@@ -20,11 +20,11 @@
 					<div class="my-grid">
 						<% int currentCase = (int) request.getAttribute("position"); %>
 						<% for(int i = 1; i <= 31; i++) { %>
+							<% String classes = "item item" + i; %>
 							<% if(i == currentCase) { %>
-				      			<div class="item<%= i %> current"><%= i %></div>
-							<% } else { %>
-				      			<div class="item<%= i %>"><%= i %></div>
+				      			<% classes += " current"; %>
 							<% } %>
+			      			<div class="<%= classes %>"><%= i %></div>
 						<% } %>
 					</div>
 				</div>
