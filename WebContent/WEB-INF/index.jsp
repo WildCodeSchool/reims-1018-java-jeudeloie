@@ -38,10 +38,31 @@
 		</form>
 		<form action=""method="post" class="info">
 			<p><%if (currentCase==1 ||currentCase==2||currentCase==3||currentCase==4 ) {%>
-			<button type="submit">Clique pour voir ce qu'il se passe</button>
+			<button type="submit"><a href="#openModal">Clique pour voir ce qu'il se passe</a>
+			<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h2>Date</h2>
+				<p>Il se passe plein de choses</p>
+				<p>Viens les découvrir !! </p>
+			</div>
+			</div>
+			</button>
+			
 			<% } %></p>
 			<p><% if (currentCase==7||currentCase==8||currentCase==9){ %>
-			<button type="submit">On est fermé</button><%} %>
+			<button type="submit"><a href="#openModal">On est fermé</a>
+			<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h2>On se repose</h2>
+				<p>Reviens une prochaine fois.</p>
+				<p>Relance le dé</p>
+			</div>
+			</div></button><%} %>
+			
+
+			
 			</p>
 		</form>
 		
