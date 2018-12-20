@@ -17,7 +17,7 @@
 			
 			<div class="row">
 
-				<% int currentCase = 15; %>
+				<% int currentCase = (int) request.getAttribute("position"); %>
 				<% for(int i = 1; i <= 31; i++) { %>
 					<% if(i == currentCase) { %>
 		      			<div class="current col-2 foo"><%= i %></div>
@@ -26,6 +26,8 @@
 					<% } %>
 				<% } %>
 			</div>
+		</div>
+		<div class="dice">
 		
 		</div>
 	</main>
