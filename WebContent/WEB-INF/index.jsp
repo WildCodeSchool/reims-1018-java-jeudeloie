@@ -27,9 +27,11 @@
 				<% } %>
 			</div>
 		</div>
-		<div class="dice">
-		
-		</div>
+		<form action="" method="post" class="dice">
+			<p><%= request.getAttribute("diceRoll") %></p>
+			<input type="hidden" name="position" value="<%= currentCase %>">
+			<button type="submit">Lancer le dé</button>
+		</form>
 	</main>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
