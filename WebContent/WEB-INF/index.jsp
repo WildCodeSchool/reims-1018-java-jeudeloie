@@ -13,18 +13,21 @@
 		<h1>Hello Saint Ex !</h1>
 	</header>
 	<main>
-		<div class="container grille">
+		<div class="container">
 			
 			<div class="row">
-
-				<% int currentCase = 15; %>
-				<% for(int i = 1; i <= 31; i++) { %>
-					<% if(i == currentCase) { %>
-		      			<div class="current col-2 foo"><%= i %></div>
-					<% } else { %>
-		      			<div class="col-2 foo"><%= i %></div>
-					<% } %>
-				<% } %>
+				<div class="col-12">
+					<div class="my-grid">
+						<% int currentCase = 15; %>
+						<% for(int i = 1; i <= 31; i++) { %>
+							<% if(i == currentCase) { %>
+				      			<div class="item<%= i %> current"><%= i %></div>
+							<% } else { %>
+				      			<div class="item<%= i %>"><%= i %></div>
+							<% } %>
+						<% } %>
+					</div>
+				</div>
 			</div>
 		
 		</div>
