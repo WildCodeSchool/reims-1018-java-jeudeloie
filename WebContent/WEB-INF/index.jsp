@@ -18,7 +18,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="my-grid">
-						<% int currentCase = 15; %>
+						<% int currentCase = (int) request.getAttribute("position"); %>
 						<% for(int i = 1; i <= 31; i++) { %>
 							<% if(i == currentCase) { %>
 				      			<div class="item<%= i %> current"><%= i %></div>
@@ -29,8 +29,13 @@
 					</div>
 				</div>
 			</div>
-		
-		</div>
+	</div>
+
+		<form action="" method="post" class="dice">
+			<p><%= request.getAttribute("diceRoll") %></p>
+			<input type="hidden" name="position" value="<%= currentCase %>">
+			<button type="submit">Lancer le dé</button>
+		</form>
 	</main>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
