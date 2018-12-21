@@ -24,7 +24,7 @@
 							<% if(i == currentCase) { %>
 				      			<% classes += " current"; %>
 							<% } %>
-			      				<div data-toggle="modal" data-target="#exampleModal" class="<%= classes %>">
+			      				<div data-toggle="modal" data-target="#exampleModal" class="<%= classes %>" style="grid-area: _<%= i %>">
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
