@@ -2,20 +2,15 @@
 
 @font-face
 {
-	font-family:"Cobol bold";
-    src:("The Northern Block - Cobol-Bold.otf");
+	font-family:"cobol";
 }
-@font-face
-{
-	font-family:"Cobol light";
-    src:("The Northern Block - Cobol-Light.otf");
-}
+
 h1
 {
 	color:#EF914B;
 	text-shadow: 2px 2px 2px black;
 	text-align: center;
-	font-family:Cobol bold, sans-serif;	
+	font-family:"cobol";	
 }
 h2
 {
@@ -32,7 +27,7 @@ h2
 
 body
 {
-	font-family:Cobol bold, sans serif;
+	font-family:"cobol";
 	background-image: linear-gradient(to right, white, #005F82);
 }
 .my-grid
