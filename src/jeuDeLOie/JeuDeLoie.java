@@ -49,12 +49,12 @@ public class JeuDeLoie extends HttpServlet {
 		int position = Integer.parseInt(request.getParameter("position"));
 		int diceRoll = Dice.roll();
 		if (position<32) {
-		position += diceRoll;
-		
-		request.setAttribute("position", position);
-		request.setAttribute("diceRoll", diceRoll);
+			position += diceRoll;
+			
+			request.setAttribute("position", position);
+			request.setAttribute("diceRoll", diceRoll);
 		}
-			doGet(request,response);
+		doGet(request,response);
 		
 	}
 }
