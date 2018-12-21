@@ -3,18 +3,37 @@
 @font-face
 {
 	font-family:"Cobol bold";
-    src: (The Northern Block - Cobol-Bold.otf);
+    src:("The Northern Block - Cobol-Bold.otf");
 }
-
+@font-face
+{
+	font-family:"Cobol light";
+    src:("The Northern Block - Cobol-Light.otf");
+}
 h1
 {
-	color:blue;
-	font-family:Cobol bold, sans-serif;
+	color:#EF914B;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+	font-family:Cobol bold, sans-serif;	
+}
+h2
+{
+	text-shadow: 2px 2px 2px #EF914B;
+}
+img
+{
+	width:200px;
+}
+h2
+{
+	text-align:center;
 }
 
 body
 {
-	font-family:Cobol, sans serif;
+	font-family:Cobol bold, sans serif;
+	background-image: linear-gradient(to right, white, #005F82);
 }
 .my-grid
 {
@@ -253,6 +272,7 @@ body
 	--border-radius-size: 2em;
 	border: 4px solid white;
 	text-align:center;
+	line-height:4em;
 }
 
 
@@ -334,7 +354,23 @@ body
 }
 .close:hover { background: #00d9ff; }
 
-
+.footer
+{
+  display:flex;
+  flex-direction:row;
+  color:black;
+  justify-content: center;
+  font-size: 0.8em;
+  width: 5%;
+  height:auto;
+  margin-top: 50px;
+}
+.my-row img
+{
+  width:50%;
+  align-items: center;
+ 
+}
 
 
 
