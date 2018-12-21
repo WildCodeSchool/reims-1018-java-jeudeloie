@@ -354,22 +354,11 @@ body
 }
 .close:hover { background: #00d9ff; }
 
-.footer
+.row logos
 {
-  display:flex;
-  flex-direction:row;
-  color:black;
-  justify-content: center;
-  font-size: 0.8em;
-  width: 5%;
-  height:auto;
-  margin-top: 50px;
-}
-.my-row img
-{
-  width:50%;
-  align-items: center;
- 
+	display:block;
+	align-item:space-between;
+	width:200%; 
 }
 
 
