@@ -22,7 +22,10 @@
 						<% int currentCase = (int) request.getAttribute("position"); %>
 						<% for(int i = 1; i <= 31; i++) { %>
 							<% String classes = "item item" + i; %>
-							<% String extraData = " data-toggle=\"modal\" data-target=\"#exampleModal" + i + "\""; %>
+							<% String extraData = ""; %>
+							<% if(currentCase == 0) { %>
+								<% extraData = " data-toggle=\"modal\" data-target=\"#exampleModal" + i + "\""; %>
+							<% } %>
 							<% if(currentCase == i) { %>
 				      			<% classes += " current"; %>
 							<% } %>
